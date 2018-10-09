@@ -160,7 +160,7 @@ font-family: 'Marmelad', sans-serif;
 
 .vertical-center {
   min-height: 100%;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -171,4 +171,8 @@ font-family: 'Marmelad', sans-serif;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+.game{
+  height: 450px;
 }

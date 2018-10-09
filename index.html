@@ -10,7 +10,7 @@
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
 
       <link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="css/blockrain.css">
 
 </head>
 
@@ -97,7 +97,7 @@
             <li>And more...</li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="game col-md-4">
         </div>
       </div>
     </div>
@@ -236,8 +236,11 @@
 
 
     <script  src="js/index.js"></script>
-
-
+    <script src="js/blockrain.jquery.min.js"></script>
+    <script src="js/blockrain.jquery.js"></script>
+    <script>
+        $('.game').blockrain({theme: 'candy', autoplay: true, autoplayRestart: true});
+    </script>
 
 
 </body>
