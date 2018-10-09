@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio Webpage</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id='app'>
+  <!-- Introduction -->
+  <div class="section" id="intro">
+    <div class="container">
+      <button class="btn btn-outline-light" id="randomize-btn"><i class="fas fa-random"></i></button>
+      <div class="intro">
+        <h1>Hi, I'm Raymond! <i class="far fa-grimace"></i></h1>
+        <div class="intro-desc"> Software Developer | Full Stack | DevOps | Student at Carleton U.</div>
+        <div class="icons-social">
+          <div class="btn-group">
+            <div class="col-sm-1">
+              <a class="btn btn-outline-light" href="https://github.com/raymondwu1" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <div class="col-sm-1">
+              <a class="btn btn-outline-light" href="https://www.linkedin.com/in/raymond-wu1/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <div class="col-sm-1">
+              <a class="btn btn-outline-light" href="https://codepen.io/raymondwu1/" target="_blank"><i class="fab fa-codepen fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll">
+        <div>More about me</div>
+        <div class="btn-group">
+          <a href="#about" class="btn btn-outline-light"><i class="fas fa-angle-double-down"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phantom element to prevent jittery transition to fixed navbar -->
+  <div id="nav-phantom"></div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-sm" id="nav">
+    <div class="container">
+      <a class="navbar-brand" href="#intro"><i class="fas fa-angle-double-up"></i> Top</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-0 mx-md-1"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item mx-0 mx-md-1"><a class="nav-link" href="#projects">Projects</a </li>
+      <li class="nav-item mx-0 mx-md-1"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item mx-0 mx-md-1"><a class="nav-link" href="#">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About -->
+  <div class="section vertical-center c-dark" id="about">
+    <div class="container">
+      <h1 class="title-font text-left">About Me</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="text-left">I'm a software engineer who enjoys creating applications — from the underlying architecture to the responsive user interface. I've built websites, web apps, tools and have even re-created some classic 2d games. </p>
+          <p class="text-left">I will be graduating this November from <a href="https://carleton.ca/" target="_blank">Carleton University</a> with a B.Eng in Software Engineering, and have valued the time I have spent learning and improving my skills. I look forward to the
+            future and will continue to tackle challenging problems to hone my skills and learn new things in the process.</p>
+        </div>
+        <div class="col-md-4">
+          <p class="text-left">I love playing video games, watching sports and e-sports and going out with friends or family.</p>
+          <p class="text-left">Some of the things im experienced with:</p>
+          <ul class="inline-list">
+            <li>Java</li>
+            <li>Spring</li>
+            <li>C#</li>
+            <li>C/C++</li>
+            <li>REST</li>
+            <li>JQuery</li>
+          </ul>
+          <ul class="inline-list">
+            <li>HTML5 & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>And more...</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects/Portfolio -->
+  <div class="section vertical-center c-dark" id="projects">
+    <div class="container ">
+      <h1 class="title-font text-left">Some Of My Projects</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <a class="project-box" href="https://github.com/raymondwu1/SYSC4806Project" target="_blank"><img class="img-fluid"src="https://i.gyazo.com/7de20105922572ef63a61008c8eaa6e9.png" alt="Perk manager">
+              <div class="project-box-caption">
+                <div class="project-box-caption-content">
+                  <div class="project-category text-faded">
+                    Perk Manager
+                  </div>
+                  <div class="project-desc">
+                    Java/Spring/PostgreSQL
+                  </div>
+                </div>
+              </div>
+        </a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a class="project-box" href="https://codepen.io/raymondwu1/pen/ZqWNwJ" target="_blank"><img class="img-fluid" src="https://i.gyazo.com/68cca99cbe39195010b30493406b792b.png" alt="React Calculator">
+              <div class="project-box-caption">
+                <div class="project-box-caption-content">
+                  <div class="project-category text-faded">
+                    Calculator
+                  </div>
+                  <div class="project-desc">
+                    React
+                  </div>
+                </div>
+              </div>
+        </a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a class="project-box" href="" target="_blank"><img class="img-fluid" src="" alt="Tetris">
+              <div class="project-box-caption">
+                <div class="project-box-caption-content">
+                  <div class="project-category text-faded">
+                    Tetris
+                  </div>
+                  <div class="project-desc">
+                    JavaScript/HTML/CSS
+                  </div>
+                </div>
+              </div>
+        </a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a class="project-box" href="https://github.com/naolwakoya/SYSC3303-group-project" target="_blank"><img class="img-fluid" src="http://www.rhubcom.com/v4/image/turboMeeting_file-transfer.jpg" alt="TFTP File Transfer">
+              <div class="project-box-caption">
+                <div class="project-box-caption-content">
+                  <div class="project-category text-faded">
+                    TFTP File Transfer
+                  </div>
+                  <div class="project-desc">
+                    Java
+                  </div>
+                </div>
+              </div>
+        </a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a class="project-box" href="https://codepen.io/raymondwu1/pen/xyRvje" target="_blank"><img class="img-fluid"src="https://i.gyazo.com/70da1191e9a9698d67160f02b2893a6a.png" alt="Perk manager">
+              <div class="project-box-caption">
+                <div class="project-box-caption-content">
+                  <div class="project-category text-faded">
+                    Random Quote Generator
+                  </div>
+                  <div class="project-name">
+                    JavaScript/JQuery
+                  </div>
+                </div>
+              </div>
+        </a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a class="project-box" href="https://codepen.io/raymondwu1/pen/zJbOgQ" target="_blank"><img class="img-fluid" src="https://i.gyazo.com/f907c74c52529bf6f6a99816f34bfbc5.png" alt="Tribute page">
+              <div class="project-box-caption">
+                <div class="project-box-caption-content">
+                  <div class="project-category text-faded">
+                   Tribute Page
+                  </div>
+                  <div class="project-desc">
+                    HTML/CSS
+                  </div>
+                </div>
+              </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="section vertical-center c-dark" id="contact">
+    <div class="container">
+      <h1 class="title-font text-center">Let's Get In Touch!</h1>
+      <hr>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <p class="text-center">I'm currently open for opportunities or to simply connect and say hello! You can contact me through the following forms of communication:</p>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-3 mb-3 mb-md-0">
+          <div class="card py-4">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3 mb-md-0">
+          <div class="card py-4">
+            <div class="card-body text-center">
+              <i class="fab fa-linkedin mb-2"></i>
+              <h4 class="text-uppercase m-0">LinkedIn</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer text-center bg-light"><small>Designed and created by Raymond</small></div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

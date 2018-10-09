@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Marmelad");
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F2F2F2;
+}
+
+.section {
+  padding: 2rem 0;
+  min-height: 100vh;
+  text-align: center;
+  color: #ffffff;
+}
+
+.intro{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-desc {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.icons-social i {
+  font-size: 2em;
+}
+
+#nav-phantom{
+  display: none;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+}
+
+.c-dark{
+  color: #363636;
+}
+
+#about {
+  background-image: url("https://images.pexels.com/photos/1084510/pexels-photo-1084510.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.project-box {
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  height: 15rem;
+  margin-bottom: 30px;
+}
+
+.project-box img {
+  min-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
+
+.project-box .project-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(169, 169, 169, 0.9);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.project-box .project-box-caption .project-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+.project-box
+  .project-box-caption
+  .project-box-caption-content
+  .project-category,
+.project-box .project-box-caption .project-box-caption-content .project-desc {
+  padding: 0 15px;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.project-box
+  .project-box-caption
+  .project-box-caption-content
+  .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-box .project-box-caption .project-box-caption-content .project-desc {
+  font-size: 18px;
+}
+
+.project-box:hover .project-box-caption {
+  opacity: 1;
+}
+
+.project-box:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .project-box
+    .project-box-caption
+    .project-box-caption-content
+    .project-category {
+    font-size: 22px;
+  }
+  .project-box .project-box-caption .project-box-caption-content .project-desc {
+    font-size: 16px;
+  }
+}
+
+.btn:active,
+.btn:focus,
+.btn.active,
+.btn:active:focus {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#contact .card {
+  border-bottom: 0.25rem solid #64a19d;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.inline-list{
+  display: inline-block;
+  text-align: left;
+}
+
+.title-font{
+font-family: 'Marmelad', sans-serif;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+}
+.scroll {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
