@@ -93,6 +93,7 @@ body {
   max-width: 25rem;
   height: 15rem;
   margin-bottom: 30px;
+  border-bottom: 0.25rem solid #FE8282;
 }
 
 .project-box img {
@@ -110,7 +111,7 @@ body {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(169, 169, 169, 0.9);
+  background: rgba(70, 70, 70, 0.9);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -211,4 +212,5 @@ font-family: 'Marmelad', sans-serif;
 
 .game{
   height: 450px;
+  border-bottom: 0.25rem solid #FE8282;
 }
