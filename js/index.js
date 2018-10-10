@@ -87,27 +87,25 @@ $(document).ready(function () {
       }
     });
 
-    // Bind to scroll
-    $(window).scroll(function(){
-       // Get container scroll position
-       var fromTop = $(this).scrollTop()+topMenuHeight;
+    var sections = $('.section')
+    var nav = $('#nav')
+    var nav_height = nav.outerHeight();
 
-       // Get id of current scroll item
-       var cur = scrollItems.map(function(){
-         if ($(this).offset().top < fromTop)
-           return this;
-       });
-       // Get the id of the current element
-       cur = cur[cur.length-1];
-       var id = cur && cur.length ? cur[0].id : "";
+    $(window).scroll( function () {
+      var currentPosition = $(this).scrollTop();
 
-       if (lastId !== id) {
-           lastId = id;
-           // Set/remove active class
-           menuItems
-             .parent().removeClass("active")
-             .end().filter("[href='#"+id+"']").parent().addClass("active");
-       }
+      sections.each(function() {
+        var top = $(this).offset().top - nav_height;
+        var bottom = top + $(this).outerHeight();
+
+        if (currentPosition >= top && currentPosition <= bottom) {
+          nav.find('a').removeClass('active');
+          sections.removeClass('active');
+
+          $(this).addClass('active');
+          nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+        }
+      });
     });
 
   }).resize();
