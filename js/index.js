@@ -1,7 +1,9 @@
 document.onload = generateBackground();
 
 $(document).ready(function () {
+  $('.game').blockrain({theme: 'candy', autoplay: true, autoplayRestart: true, speed: 30});
   document.getElementById("randomize-btn").addEventListener("click", function () {generateBackground();});
+  document.getElementById("tetris-btn").addEventListener("click", function(){toggleTetris();});
 
   // Select all links with hashes for smooth scrolling
   $('a[href*="#"]')
@@ -85,4 +87,23 @@ function randomColor() {
 function generateBackground() {
   document.getElementById("intro").style.background =
   "linear-gradient(45deg," + randomColor() + ", " + randomColor() + ")";
+}
+
+function toggleTetris(){
+    if ($('#tetris-btn').text()==='Try me!'){
+    $('.game').blockrain({autoplay: false, speed: 20});
+    $('.game').blockrain('controls', true);
+    $('.game').blockrain('restart');
+    $('#tetris-btn').removeClass("btn-success");
+    $('#tetris-btn').addClass("btn-danger");
+    $('#tetris-btn').html("I'm Done!");
+  }
+  else{
+    $('.game').blockrain({autoplay: true, autoplayRestart: true, speed:30});
+    $('.game').blockrain('restart');
+    $('#tetris-btn').removeClass("btn-danger");
+    $('#tetris-btn').addClass("btn-success");
+    $('#tetris-btn').html("Try me!");
+  }
+
 }
