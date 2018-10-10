@@ -46,7 +46,7 @@ body {
 }
 
 #about {
-  background-image: url("https://images.pexels.com/photos/1084510/pexels-photo-1084510.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  background-image: url("../assets/images/bg-photo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
