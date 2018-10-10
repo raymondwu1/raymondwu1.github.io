@@ -13,29 +13,9 @@ body {
   color: #ffffff;
 }
 
-.fade{
-  opacity: 0;
-  transform: translate(0, 20px);
-  -webkit-transition: opacity 1s ease-in;
-   -moz-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-     -o-transition :opacity 1s ease-in;
-        transition: opacity 1s ease-in;
-
-}
-
-.fade.visible{
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
 .intro{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  margin-top: 10em;
+  margin-bottom: 10em;
 }
 
 .intro-desc {
@@ -179,6 +159,11 @@ body {
   border-bottom: 0.25rem solid #FE8282;
 }
 
+.contact-socials{
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
 .footer {
   padding: 0.25rem 0;
   background-color: #525252;
@@ -202,12 +187,8 @@ font-family: 'Marmelad', sans-serif;
   align-items: center;
 }
 .scroll {
-  position: absolute;
-  bottom: 0.5rem;
-  width: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+
 }
 
 .game{
