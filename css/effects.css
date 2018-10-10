@@ -203,16 +203,22 @@
 
 .fade{
   opacity: 0;
-  transform: translate(0, 20px);
+  -webkit-transform: translate(0, 20px);
+     -moz-transform: translate(0, 20px);
+       -o-transform: translate(0, 20px);
+          transform: translate(0, 20px);
   -webkit-transition: opacity 1s ease-in;
    -moz-transition: opacity 1s ease-in;
     -ms-transition: opacity 1s ease-in;
-     -o-transition :opacity 1s ease-in;
+     -o-transition: opacity 1s ease-in;
         transition: opacity 1s ease-in;
 
 }
 
 .fade.visible{
   opacity: 1;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+     -moz-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
