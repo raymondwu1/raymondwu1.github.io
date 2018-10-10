@@ -1,7 +1,9 @@
-document.onload = generateBackground();
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
+
+document.onload = generateBackground();
+
 $(document).ready(function () {
   $('.game').blockrain({theme: 'candy', autoplay: true, autoplayRestart: true, speed: 30});
   document.getElementById("randomize-btn").addEventListener("click", function () {generateBackground();});

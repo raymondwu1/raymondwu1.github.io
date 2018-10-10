@@ -16,11 +16,11 @@ body {
 .fade{
   opacity: 0;
   transform: translate(0, 20px);
-  -webkit-transition: opacity 2s;
-   -moz-transition: opacity 2s;
-    -ms-transition: opacity 2s;
-     -o-transition :opacity 2s;
-        transition: opacity 2s;
+  -webkit-transition: opacity 1s ease-in;
+   -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+     -o-transition :opacity 1s ease-in;
+        transition: opacity 1s ease-in;
 
 }
 
@@ -163,9 +163,10 @@ body {
   border-bottom: 0.25rem solid #64a19d;
 }
 
-footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.footer {
+  padding: 0.25rem 0;
+  background-color: #525252;
+  color: #ffffff;
 }
 
 
