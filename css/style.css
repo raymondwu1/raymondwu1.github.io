@@ -54,7 +54,15 @@ body {
 
 .navbar a {
   color: white;
-  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover{
+  border-bottom: 3px solid #FE8282;
+}
+
+.navbar a:active{
+  border-bottom: 3px solid #FE8282;
 }
 
 .c-dark{
@@ -160,7 +168,7 @@ body {
 }
 
 #contact .card {
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #FE8282;
 }
 
 .footer {
