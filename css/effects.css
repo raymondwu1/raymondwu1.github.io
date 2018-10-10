@@ -64,12 +64,12 @@
   transform: translateY(-8px);
 }
 
-.animate-reveal {
+.animate-popup {
   opacity: 0;
-  -webkit-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
-     -moz-animation: reveal 1s ease-in 1 normal forwards;
-       -o-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
-          animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  -webkit-animation: popup 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+     -moz-animation: popup 1s ease-in 1 normal forwards;
+       -o-animation: popup 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+          animation: popup 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
 }
 
 .animate-1 {
@@ -133,7 +133,7 @@
 }
 
 
-@-webkit-keyframes reveal {
+@-webkit-keyframes popup {
   0% {
     opacity: 0;
     -webkit-transform: translateY(100%);
@@ -150,7 +150,7 @@
   }
 }
 
-@-moz-keyframes reveal {
+@-moz-keyframes popup {
   0% {
     opacity: 0;
     -webkit-transform: translateY(100%);
@@ -167,7 +167,7 @@
   }
 }
 
-@-o-keyframes reveal {
+@-o-keyframes popup {
   0% {
     opacity: 0;
     -webkit-transform: translateY(100%);
@@ -184,7 +184,7 @@
   }
 }
 
-@keyframes reveal {
+@keyframes popup {
   0% {
     opacity: 0;
     -webkit-transform: translateY(100%);
