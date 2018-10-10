@@ -1,5 +1,7 @@
 document.onload = generateBackground();
-
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
 $(document).ready(function () {
   $('.game').blockrain({theme: 'candy', autoplay: true, autoplayRestart: true, speed: 30});
   document.getElementById("randomize-btn").addEventListener("click", function () {generateBackground();});
@@ -52,6 +54,21 @@ $(document).ready(function () {
   resize(function () {
     //Viewheight of the window
     var windowHeight = $(window).height();
+
+    $(document).scroll(function(){
+
+      var pageTop = $(document).scrollTop();
+      var pageBottom = pageTop + $(window).height();
+      $(".fade").each(function(){
+        if ($(this).position().top < pageBottom) {
+          $(this).addClass("visible")
+        } else {
+          $(this).removeClass("visible")
+        }
+
+});
+      });
+
     //When the document is being scrolled
     $(document).scroll(function () {
       if ($(this).scrollTop() > windowHeight) {
@@ -67,8 +84,10 @@ $(document).ready(function () {
         $('#nav-phantom').hide();
       }
     });
-  }).
-  resize();
+
+
+
+  }).resize();
 });
 
 function randomColor() {
