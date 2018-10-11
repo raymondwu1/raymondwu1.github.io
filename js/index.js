@@ -1,3 +1,5 @@
+
+//Move to the top of the page whenever the page is loaded
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
@@ -5,11 +7,18 @@ $(window).on('beforeunload', function() {
 document.onload = generateBackground();
 
 $(document).ready(function () {
+
+  //Start a game of tetris with autoplay
   $('.game').blockrain({theme: 'candy', autoplay: true, autoplayRestart: true, speed: 30});
+
+  //Event Listeners
   document.getElementById("randomize-btn").addEventListener("click", function () {generateBackground();});
   document.getElementById("tetris-btn").addEventListener("click", function(){toggleTetris();});
 
-  // Select all links with hashes for smooth scrolling
+  /*
+    This event handler implements smooth scrolling when clicking on an anchor link
+  */
+  // Select all links with hashes
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]').
@@ -57,6 +66,9 @@ $(document).ready(function () {
     //Viewheight of the window
     var windowHeight = $(window).height();
 
+    /*
+      This event handler makes it so elements fade in on scroll
+    */
     $(document).scroll(function(){
 
       var pageTop = $(document).scrollTop();
@@ -71,14 +83,16 @@ $(document).ready(function () {
 });
       });
 
-    //When the document is being scrolled
+      /*
+        This event handler makes it so the navbar becomes fixed after the user scrolls past it
+      */
     $(document).scroll(function () {
       if ($(this).scrollTop() > windowHeight) {
         $("#nav").addClass("fixed-top");
         $("#nav").css("background-color", "rgba(0,0,0,0.5)");
         var phantomHeight = $("#nav").outerHeight();
 
-        // Set the height of $sticky-phantom
+        // Set the height of $nav-phantom
         $("#nav-phantom").height(phantomHeight).show();
       } else {
         $("#nav").removeClass("fixed-top");
@@ -87,10 +101,14 @@ $(document).ready(function () {
       }
     });
 
+    // Define variables
     var sections = $('.section')
     var nav = $('#nav')
     var nav_height = nav.outerHeight();
 
+    /*
+      This event handler makes it so that the nav links become active when on the respective pages
+    */
     $(window).scroll( function () {
       var currentPosition = $(this).scrollTop();
 
@@ -111,6 +129,9 @@ $(document).ready(function () {
   }).resize();
 });
 
+/*
+  Generates a random hex value for a color code
+*/
 function randomColor() {
   return (
     "#" +
@@ -124,11 +145,17 @@ function randomColor() {
 
 }
 
+/*
+  Creates a linear gradient background
+*/
 function generateBackground() {
   document.getElementById("intro").style.background =
   "linear-gradient(45deg," + randomColor() + ", " + randomColor() + ")";
 }
 
+/*
+  Toggles between autoplay and user playing
+*/
 function toggleTetris(){
     if ($('#tetris-btn').text()==='Try me!'){
     $('.game').blockrain({autoplay: false, speed: 20});
