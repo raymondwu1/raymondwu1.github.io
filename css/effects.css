@@ -266,13 +266,18 @@
 	box-shadow: 1391px 323px #FFF , 519px 778px #FFF , 1424px 1305px #FFF , 1110px 1700px #FFF , 1029px 1129px #FFF , 1082px 682px #FFF , 493px 1709px #FFF , 997px 951px #FFF , 1484px 1653px #FFF , 722px 1409px #FFF , 1069px 1906px #FFF , 187px 1527px #FFF , 422px 652px #FFF , 357px 1338px #FFF , 1572px 936px #FFF , 1682px 760px #FFF , 1989px 757px #FFF , 1484px 1611px #FFF , 1782px 665px #FFF , 693px 1105px #FFF , 1741px 951px #FFF , 1256px 1847px #FFF , 755px 711px #FFF , 70px 1361px #FFF , 338px 1835px #FFF , 1972px 567px #FFF , 1281px 87px #FFF , 429px 1973px #FFF , 74px 1574px #FFF , 1085px 275px #FFF , 1479px 1280px #FFF , 601px 339px #FFF , 1874px 437px #FFF , 1749px 935px #FFF , 1851px 1873px #FFF , 373px 1556px #FFF , 1604px 1105px #FFF , 1941px 1220px #FFF , 1167px 1628px #FFF , 167px 1089px #FFF , 389px 1713px #FFF , 1587px 263px #FFF , 29px 1734px #FFF , 1383px 770px #FFF , 566px 159px #FFF , 336px 1417px #FFF , 598px 175px #FFF , 351px 1240px #FFF , 739px 1273px #FFF , 1630px 1195px #FFF , 548px 323px #FFF , 1741px 1844px #FFF , 194px 376px #FFF , 1595px 1423px #FFF , 171px 1722px #FFF , 953px 507px #FFF , 1484px 1px #FFF , 1621px 399px #FFF , 857px 386px #FFF , 73px 908px #FFF , 388px 579px #FFF , 1528px 373px #FFF , 1821px 489px #FFF , 442px 1611px #FFF , 408px 1029px #FFF , 1417px 589px #FFF , 1806px 1119px #FFF , 766px 925px #FFF , 1864px 491px #FFF , 1994px 862px #FFF , 1014px 362px #FFF , 1427px 538px #FFF , 422px 26px #FFF , 291px 618px #FFF , 838px 1535px #FFF , 604px 558px #FFF , 1885px 814px #FFF , 1058px 1703px #FFF , 373px 59px #FFF , 315px 963px #FFF , 1668px 718px #FFF , 1262px 10px #FFF , 484px 231px #FFF , 1973px 900px #FFF , 315px 694px #FFF , 437px 1001px #FFF , 1806px 296px #FFF , 1594px 1265px #FFF , 1758px 702px #FFF , 461px 374px #FFF , 651px 1661px #FFF , 1885px 1732px #FFF , 575px 1985px #FFF , 1959px 1879px #FFF , 174px 932px #FFF , 1099px 1462px #FFF , 1930px 985px #FFF , 1283px 267px #FFF , 970px 259px #FFF , 66px 390px #FFF;
 	animation: animStar 150s linear infinite;
 }
-
 @keyframes animStar {
 	from {
-		transform: translateY(-2000px);
+    -webkit-transform: translateY(-100vh);
+       -moz-transform: translateY(-100vh);
+         -o-transform: translateY(-100vh);
+		transform: translateY(-100vh);
 	}
 
 	to {
-		transform: translateY(-4000px);
+    -webkit-transform: translateY(-300vh);
+       -moz-transform: translateY(-300vh);
+         -o-transform: translateY(-300vh);
+		transform: translateY(-300vh);
 	}
 }
